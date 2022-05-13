@@ -97,14 +97,17 @@ class Images3 extends StatelessWidget {
             )
           ],
         ),
+        SizedBox(
+          height: 5,
+        ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
               alignment: Alignment.center,
               child: Image.network(
                 "https://images.unsplash.com/photo-1569668723493-80d82b05bad7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNhbWJvZGlhfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-                width: MediaQuery.of(context).size.width / 2,
+                width: (MediaQuery.of(context).size.width / 2) - 2.5,
                 height: 200,
                 fit: BoxFit.fill,
               ),
@@ -114,7 +117,7 @@ class Images3 extends StatelessWidget {
               alignment: Alignment.center,
               child: Image.asset(
                 "assets/images/2.png",
-                width: MediaQuery.of(context).size.width / 2,
+                width: (MediaQuery.of(context).size.width / 2) - 2.5,
                 height: 200,
                 fit: BoxFit.fill,
               ),

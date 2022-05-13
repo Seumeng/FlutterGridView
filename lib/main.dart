@@ -57,19 +57,15 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(children: [
-          Images3(),
-          SizedBox(
-            height: 10,
-          ),
-          Image5()
-        ]),
-        // child: Text(
-        //   "Hello world",
-        //   style: TextStyle(color: Colors.red),
-        // ),
-        // color: Color.fromARGB(255, 233, 233, 233),
-      ),
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [Text("Image 3"), Images3(), Text("Image 5"), Image5()]
+              // child: Text(
+              //   "Hello world",
+              //   style: TextStyle(color: Colors.red),
+              // ),
+              // color: Color.fromARGB(255, 233, 233, 233),
+              )),
       floatingActionButton: IconButton(
           icon: Icon(Icons.search),
           onPressed: () {
